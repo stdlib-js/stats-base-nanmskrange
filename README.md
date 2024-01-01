@@ -43,30 +43,38 @@ The [**range**][range] is defined as the difference between the maximum and mini
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-nanmskrange
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var nanmskrange = require( '@stdlib/stats-base-nanmskrange' );
+nanmskrange = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-nanmskrange@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var nanmskrange = require( 'path/to/vendor/umd/stats-base-nanmskrange/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-nanmskrange@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.nanmskrange;
+})();
+</script>
 ```
 
 #### nanmskrange( N, x, strideX, mask, strideMask )
@@ -174,12 +182,17 @@ var v = nanmskrange.ndarray( N, x, 2, 1, mask, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var Float64Array = require( '@stdlib/array-float64' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-var nanmskrange = require( '@stdlib/stats-base-nanmskrange' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-nanmskrange@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var mask;
 var x;
@@ -204,6 +217,11 @@ console.log( mask );
 
 var v = nanmskrange( x.length, x, 1, mask, 1 );
 console.log( v );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -306,17 +324,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dnanmskrange]: https://github.com/stdlib-js/stats-base-dnanmskrange
+[@stdlib/stats/base/dnanmskrange]: https://github.com/stdlib-js/stats-base-dnanmskrange/tree/umd
 
-[@stdlib/stats/base/mskrange]: https://github.com/stdlib-js/stats-base-mskrange
+[@stdlib/stats/base/mskrange]: https://github.com/stdlib-js/stats-base-mskrange/tree/umd
 
-[@stdlib/stats/base/nanrange]: https://github.com/stdlib-js/stats-base-nanrange
+[@stdlib/stats/base/nanrange]: https://github.com/stdlib-js/stats-base-nanrange/tree/umd
 
-[@stdlib/stats/base/nanmskmax]: https://github.com/stdlib-js/stats-base-nanmskmax
+[@stdlib/stats/base/nanmskmax]: https://github.com/stdlib-js/stats-base-nanmskmax/tree/umd
 
-[@stdlib/stats/base/nanmskmin]: https://github.com/stdlib-js/stats-base-nanmskmin
+[@stdlib/stats/base/nanmskmin]: https://github.com/stdlib-js/stats-base-nanmskmin/tree/umd
 
-[@stdlib/stats/base/snanmskrange]: https://github.com/stdlib-js/stats-base-snanmskrange
+[@stdlib/stats/base/snanmskrange]: https://github.com/stdlib-js/stats-base-snanmskrange/tree/umd
 
 <!-- </related-links> -->
 
