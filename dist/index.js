@@ -1,9 +1,12 @@
-"use strict";var q=function(n,f){return function(){return f||n((f={exports:{}}).exports,f),f.exports}};var l=q(function(D,x){
-var R=require('@stdlib/math-base-assert-is-nan/dist');function h(n,f,t,s,o){var c,m,a,i,r,e;if(n<=0)return NaN;for(t<0?a=(1-n)*t:a=0,o<0?i=(1-n)*o:i=0,e=0;e<n&&(r=f[a],!(r===r&&s[i]===0));e++)a+=t,i+=o;if(e===n)return NaN;for(m=r,c=m,e+=1,e;e<n;e++)a+=t,i+=o,!s[i]&&(r=f[a],!R(r)&&(r<m?m=r:r>c&&(c=r)));return c-m}x.exports=h
-});var g=q(function(E,p){
-var j=require('@stdlib/math-base-assert-is-nan/dist');function w(n,f,t,s,o,c,m){var a,i,r,e,u,v;if(n<=0)return NaN;for(r=s,e=m,v=0;v<n&&(u=f[r],!(u===u&&o[e]===0));v++)r+=t,e+=c;if(v===n)return NaN;for(i=u,a=i,v+=1,v;v<n;v++)r+=t,e+=c,!o[e]&&(u=f[r],!j(u)&&(u<i?i=u:u>a&&(a=u)));return a-i}p.exports=w
-});var O=q(function(F,b){
-var z=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),y=l(),A=g();z(y,"ndarray",A);b.exports=y
-});var B=O();module.exports=B;
+"use strict";var b=function(a,n){return function(){return n||a((n={exports:{}}).exports,n),n.exports}};var P=b(function(S,y){
+var C=require('@stdlib/math-base-assert-is-nan/dist');function D(a,n,v,g,u,s,l){var m,o,t,c,q,f,r,e,i,x;for(m=n.data,o=u.data,c=n.accessors[0],t=u.accessors[0],r=g,e=l,x=0;x<a&&(i=c(m,r),!(i===i&&t(o,e)===0));x++)r+=v,e+=s;if(x===a)return NaN;for(f=i,q=f,x+=1,x;x<a;x++)r+=v,e+=s,!t(o,e)&&(i=c(m,r),!C(i)&&(i<f?f=i:i>q&&(q=i)));return q-f}y.exports=D
+});var p=b(function(T,O){
+var E=require('@stdlib/math-base-assert-is-nan/dist'),j=require('@stdlib/array-base-arraylike2object/dist'),F=P();function G(a,n,v,g,u,s,l){var m,o,t,c,q,f,r,e;if(a<=0)return NaN;if(q=j(n),f=j(u),q.accessorProtocol||f.accessorProtocol)return F(a,q,v,g,f,s,l);for(t=g,c=l,e=0;e<a&&(r=n[t],!(r===r&&u[c]===0));e++)t+=v,c+=s;if(e===a)return NaN;for(o=r,m=o,e+=1,e;e<a;e++)t+=v,c+=s,!u[c]&&(r=n[t],!E(r)&&(r<o?o=r:r>m&&(m=r)));return m-o}O.exports=G
+});var w=b(function(U,h){
+var R=require('@stdlib/strided-base-stride2offset/dist'),H=p();function I(a,n,v,g,u){var s=R(a,v),l=R(a,u);return H(a,n,v,s,g,u,l)}h.exports=I
+});var B=b(function(V,A){
+var J=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),z=w(),K=p();J(z,"ndarray",K);A.exports=z
+});var L=B();module.exports=L;
+/** @license Apache-2.0 */
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map

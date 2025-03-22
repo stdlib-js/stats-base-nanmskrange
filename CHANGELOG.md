@@ -2,6 +2,63 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-03-22)
+
+<section class="features">
+
+### Features
+
+-   [`4548d65`](https://github.com/stdlib-js/stdlib/commit/4548d65de8cbbe60014b40380cc068d891d04bb3) - add accessor protocol and refactor `stats/base/nanmskrange` [(#6295)](https://github.com/stdlib-js/stdlib/pull/6295)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#5664](https://github.com/stdlib-js/stdlib/issues/5664)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`4548d65`](https://github.com/stdlib-js/stdlib/commit/4548d65de8cbbe60014b40380cc068d891d04bb3) - **feat:** add accessor protocol and refactor `stats/base/nanmskrange` [(#6295)](https://github.com/stdlib-js/stdlib/pull/6295) _(by Rahul Kumar, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Rahul Kumar
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
