@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-22)
+## Unreleased (2025-03-29)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`ac88117`](https://github.com/stdlib-js/stdlib/commit/ac88117e8045b917e287f3c3f8a5e5f313ae5ee6) - **docs:** update related packages sections [(#6436)](https://github.com/stdlib-js/stdlib/pull/6436) _(by stdlib-bot, Athan Reines)_
 -   [`4548d65`](https://github.com/stdlib-js/stdlib/commit/4548d65de8cbbe60014b40380cc068d891d04bb3) - **feat:** add accessor protocol and refactor `stats/base/nanmskrange` [(#6295)](https://github.com/stdlib-js/stdlib/pull/6295) _(by Rahul Kumar, Athan Reines)_
 
 </details>

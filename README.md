@@ -288,6 +288,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
+
 <!-- <related-links> -->
 
 [@stdlib/stats/base/dnanmskrange]: https://github.com/stdlib-js/stats-base-dnanmskrange
@@ -301,8 +303,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/stats/base/nanmskmin]: https://github.com/stdlib-js/stats-base-nanmskmin
 
 [@stdlib/stats/base/snanmskrange]: https://github.com/stdlib-js/stats-base-snanmskrange
-
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
 <!-- </related-links> -->
 
