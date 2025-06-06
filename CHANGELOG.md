@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-06-06)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`2db7567`](https://github.com/stdlib-js/stdlib/commit/2db75670d43471c0f502e46d2564582add3d6135) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`ac88117`](https://github.com/stdlib-js/stdlib/commit/ac88117e8045b917e287f3c3f8a5e5f313ae5ee6) - **docs:** update related packages sections [(#6436)](https://github.com/stdlib-js/stdlib/pull/6436) _(by stdlib-bot, Athan Reines)_
 -   [`4548d65`](https://github.com/stdlib-js/stdlib/commit/4548d65de8cbbe60014b40380cc068d891d04bb3) - **feat:** add accessor protocol and refactor `stats/base/nanmskrange` [(#6295)](https://github.com/stdlib-js/stdlib/pull/6295) _(by Rahul Kumar, Athan Reines)_
 
@@ -47,9 +48,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Rahul Kumar
 
 </section>
