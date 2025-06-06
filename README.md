@@ -43,38 +43,32 @@ The [**range**][range] is defined as the difference between the maximum and mini
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-nanmskrange
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-nanmskrange = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-nanmskrange@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var nanmskrange = require( 'path/to/vendor/umd/stats-base-nanmskrange/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-nanmskrange@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.nanmskrange;
-})();
-</script>
+var nanmskrange = require( '@stdlib/stats-base-nanmskrange' );
 ```
 
 #### nanmskrange( N, x, strideX, mask, strideMask )
@@ -162,7 +156,7 @@ var v = nanmskrange.ndarray( 4, x, 2, 1, mask, 2, 1 );
 
 -   If `N <= 0`, both functions return `NaN`.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array-base/accessor`][@stdlib/array/base/accessor]).
--   Depending on the environment, the typed versions ([`dnanmskrange`][@stdlib/stats/base/dnanmskrange], [`snanmskrange`][@stdlib/stats/base/snanmskrange], etc.) are likely to be significantly more performant.
+-   Depending on the environment, the typed versions ([`dnanmskrange`][@stdlib/stats/strided/dnanmskrange], [`snanmskrange`][@stdlib/stats/base/snanmskrange], etc.) are likely to be significantly more performant.
 
 </section>
 
@@ -174,15 +168,10 @@ var v = nanmskrange.ndarray( 4, x, 2, 1, mask, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-bernoulli@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-nanmskrange@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var uniform = require( '@stdlib/random-array-uniform' );
+var bernoulli = require( '@stdlib/random-array-bernoulli' );
+var nanmskrange = require( '@stdlib/stats-base-nanmskrange' );
 
 var x = uniform( 10, -50.0, 50.0, {
     'dtype': 'float64'
@@ -196,11 +185,6 @@ console.log( mask );
 
 var v = nanmskrange( x.length, x, 1, mask, 1 );
 console.log( v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -215,7 +199,7 @@ console.log( v );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/stats-base/dnanmskrange`][@stdlib/stats/base/dnanmskrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a double-precision floating-point strided array according to a mask, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats-strided/dnanmskrange`][@stdlib/stats/strided/dnanmskrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a double-precision floating-point strided array according to a mask, ignoring NaN values.</span>
 -   <span class="package-name">[`@stdlib/stats-base/mskrange`][@stdlib/stats/base/mskrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a strided array according to a mask.</span>
 -   <span class="package-name">[`@stdlib/stats-base/nanrange`][@stdlib/stats/base/nanrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a strided array, ignoring NaN values.</span>
 -   <span class="package-name">[`@stdlib/stats-base/nanmskmax`][@stdlib/stats/base/nanmskmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a strided array according to a mask, ignoring NaN values.</span>
@@ -304,21 +288,21 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor/tree/umd
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dnanmskrange]: https://github.com/stdlib-js/stats-base-dnanmskrange/tree/umd
+[@stdlib/stats/strided/dnanmskrange]: https://github.com/stdlib-js/stats-strided-dnanmskrange
 
-[@stdlib/stats/base/mskrange]: https://github.com/stdlib-js/stats-base-mskrange/tree/umd
+[@stdlib/stats/base/mskrange]: https://github.com/stdlib-js/stats-base-mskrange
 
-[@stdlib/stats/base/nanrange]: https://github.com/stdlib-js/stats-base-nanrange/tree/umd
+[@stdlib/stats/base/nanrange]: https://github.com/stdlib-js/stats-base-nanrange
 
-[@stdlib/stats/base/nanmskmax]: https://github.com/stdlib-js/stats-base-nanmskmax/tree/umd
+[@stdlib/stats/base/nanmskmax]: https://github.com/stdlib-js/stats-base-nanmskmax
 
-[@stdlib/stats/base/nanmskmin]: https://github.com/stdlib-js/stats-base-nanmskmin/tree/umd
+[@stdlib/stats/base/nanmskmin]: https://github.com/stdlib-js/stats-base-nanmskmin
 
-[@stdlib/stats/base/snanmskrange]: https://github.com/stdlib-js/stats-base-snanmskrange/tree/umd
+[@stdlib/stats/base/snanmskrange]: https://github.com/stdlib-js/stats-base-snanmskrange
 
 <!-- </related-links> -->
 
