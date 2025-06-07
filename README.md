@@ -156,7 +156,7 @@ var v = nanmskrange.ndarray( 4, x, 2, 1, mask, 2, 1 );
 
 -   If `N <= 0`, both functions return `NaN`.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array-base/accessor`][@stdlib/array/base/accessor]).
--   Depending on the environment, the typed versions ([`dnanmskrange`][@stdlib/stats/strided/dnanmskrange], [`snanmskrange`][@stdlib/stats/base/snanmskrange], etc.) are likely to be significantly more performant.
+-   Depending on the environment, the typed versions ([`dnanmskrange`][@stdlib/stats/strided/dnanmskrange], [`snanmskrange`][@stdlib/stats/strided/snanmskrange], etc.) are likely to be significantly more performant.
 
 </section>
 
@@ -204,7 +204,7 @@ console.log( v );
 -   <span class="package-name">[`@stdlib/stats-base/nanrange`][@stdlib/stats/base/nanrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a strided array, ignoring NaN values.</span>
 -   <span class="package-name">[`@stdlib/stats-base/nanmskmax`][@stdlib/stats/base/nanmskmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a strided array according to a mask, ignoring NaN values.</span>
 -   <span class="package-name">[`@stdlib/stats-base/nanmskmin`][@stdlib/stats/base/nanmskmin]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a strided array according to a mask, ignoring NaN values.</span>
--   <span class="package-name">[`@stdlib/stats-base/snanmskrange`][@stdlib/stats/base/snanmskrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a single-precision floating-point strided array according to a mask, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats-strided/snanmskrange`][@stdlib/stats/strided/snanmskrange]</span><span class="delimiter">: </span><span class="description">calculate the range of a single-precision floating-point strided array according to a mask, ignoring NaN values.</span>
 
 </section>
 
@@ -302,7 +302,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/stats/base/nanmskmin]: https://github.com/stdlib-js/stats-base-nanmskmin
 
-[@stdlib/stats/base/snanmskrange]: https://github.com/stdlib-js/stats-base-snanmskrange
+[@stdlib/stats/strided/snanmskrange]: https://github.com/stdlib-js/stats-strided-snanmskrange
 
 <!-- </related-links> -->
 
